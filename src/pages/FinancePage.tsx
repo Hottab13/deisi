@@ -1,12 +1,9 @@
 import { eachDayOfInterval } from "date-fns";
+import { useAppDispatch, useAppSelector } from "../hook";
+import { setFinanceRangeEnd, setFinanceRangeStart, setFinanceSelectedDates } from "../components/redux/slices/calendarSlice";
+import Calendar from "../components/MultiDateCalendar/MultiDateCalendar";
 
-import Calendar from "@/components/MultiDateCalendar/MultiDateCalendar";
-import {
-  setFinanceRangeEnd,
-  setFinanceRangeStart,
-  setFinanceSelectedDates,
-} from "@/components/redux/slices/calendarSlice";
-import { useAppDispatch, useAppSelector } from "@/hook";
+
 
 const FinancePage = () => {
   const { financeRangeStart, financeRangeEnd, financeSelectedDates } =

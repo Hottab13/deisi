@@ -1,7 +1,8 @@
-import Calendar from "@/components/MultiDateCalendar/MultiDateCalendar";
-import { setEntriesRangeEnd, setEntriesRangeStart, setEntriesSelectedDates } from "@/components/redux/slices/calendarSlice";
-import { useAppDispatch, useAppSelector } from "@/hook";
+
 import { eachDayOfInterval } from "date-fns";
+import { useAppDispatch, useAppSelector } from "../hook";
+import { setEntriesRangeEnd, setEntriesRangeStart, setEntriesSelectedDates } from "../components/redux/slices/calendarSlice";
+import Calendar from "../components/MultiDateCalendar/MultiDateCalendar";
 
 const EntriesPage = () => {
   const { entriesRangeStart, entriesRangeEnd, entriesSelectedDates } = useAppSelector(

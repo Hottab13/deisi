@@ -1,15 +1,9 @@
-import {
-  IconAddres,
-  IconCategory,
-  IconDate,
-  IconEmail,
-  IconName,
-  IconTel,
-} from "@/assets/icons";
-import { BaseField } from "@/components/BaseField";
+
 import { Box, Button, Flex, VStack, Text } from "@chakra-ui/react";
 
 import { SubmitHandler, useForm } from "react-hook-form";
+import { BaseField } from "../components/BaseField";
+import { IconAddres, IconCategory, IconDate, IconEmail, IconName, IconTel } from "../assets/icons";
 
 interface FormValues {
   name: string;

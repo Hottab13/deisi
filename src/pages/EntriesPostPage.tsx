@@ -1,9 +1,10 @@
-import { useAppSelector } from "@/hook";
+
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAppSelector } from "../hook";
 
 export const EntriesPostPage = () => {
   const { entriesRangeStart, entriesRangeEnd } = useAppSelector(

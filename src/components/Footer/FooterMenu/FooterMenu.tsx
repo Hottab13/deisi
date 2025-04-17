@@ -8,12 +8,8 @@ import {
 } from "react";
 
 import { FooterMenuItem } from "./FooterMenuItem";
-import {
-  IconClients,
-  IconEntries,
-  IconFinance,
-  IconOrders,
-} from "@/assets/icons";
+import { IconClients, IconEntries, IconFinance, IconOrders } from "../../../assets/icons";
+
 
 export interface FooterMenuItem {
   value: string;

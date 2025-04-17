@@ -12,14 +12,15 @@ import {
   IconStartDate,
   IconTailor,
   IconTextile,
-} from "@/assets/icons";
-import { BaseField } from "@/components/BaseField";
+} from "../assets/icons";
+
 import { Box, Button, Flex, VStack, Text } from "@chakra-ui/react";
 import { useState } from "react";
 
 const COLORS = ["purple", "#33AADB", "#FB2E55", "#FF9302"];
 
 import { SubmitHandler, useForm } from "react-hook-form";
+import { BaseField } from "../components/BaseField";
 
 interface FormValues {
   name: string;

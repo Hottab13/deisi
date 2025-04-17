@@ -3,8 +3,9 @@ import { ForwardRefExoticComponent, RefAttributes } from "react";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
 
-import { IconAddPost, IconBack } from "@/assets/icons";
+
 import { useHeaderLogic } from "./hook/useHeaderLogic";
+import { IconAddPost, IconBack } from "../../assets/icons";
 
 export type MenuItem = {
   icon: ForwardRefExoticComponent<IconProps & RefAttributes<SVGSVGElement>>;

@@ -1,5 +1,6 @@
-import { IconArrow } from "@/assets/icons";
+
 import { Flex, VStack, Text, HStack, Box } from "@chakra-ui/react";
+import { IconArrow } from "../assets/icons";
 
 const ClientsPage = () => {
   return (

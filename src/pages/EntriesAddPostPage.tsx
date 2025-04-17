@@ -1,19 +1,12 @@
-import {
-  IconCategory,
-  IconDate,
-  IconExecutor,
-  IconName,
-  IconProduct,
-  IconStatus,
-  IconTime,
-} from "@/assets/icons";
-import { BaseField } from "@/components/BaseField";
+
 import { Box, Button, Flex, VStack, Text } from "@chakra-ui/react";
 import { useState } from "react";
 
 const COLORS = ["purple", "#33AADB", "#FB2E55", "#FF9302"];
 
 import { SubmitHandler, useForm } from "react-hook-form";
+import { BaseField } from "../components/BaseField";
+import { IconCategory, IconDate, IconExecutor, IconName, IconProduct, IconStatus, IconTime } from "../assets/icons";
 
 interface FormValues {
   name: string;
