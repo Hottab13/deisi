@@ -1,0 +1,46 @@
+/* datepicker.css */
+.react-datepicker {
+  font-family: "SF Pro Display";
+  z-index: 9999 !important;
+  background: white;
+}
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+.react-datepicker__input-container {
+  display: block !important;
+  width: 100%;
+}
+
+/* Убедитесь, что календарь не обрезается контейнером */
+.react-datepicker-popper[data-placement^="bottom"] {
+  margin-top: 8px !important;
+}
+
+/* Улучшение позиционирования */
+.react-datepicker__triangle {
+  display: none !important; /* Можно скрыть треугольник, если он мешает */
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;  /* Принудительно растягиваем обёртку */
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;  /* Растягиваем контейнер инпута */
+}
+
+.react-datepicker__input-container input {
+  width: 100% !important;  /* Растягиваем сам инпут */
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+/* Для кастомного инпута (если используете Chakra UI) */
+.chakra-input {
+  border: none !important;
+}
